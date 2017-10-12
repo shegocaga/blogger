@@ -5,7 +5,11 @@ class TagsController < ApplicationController
   end
 
   def index
-    @tag = Tag.all
+    @tags = Tag.all
+  end
+
+  def comment_params
+    params.require(:tag).permit(:name)
   end
 
 end

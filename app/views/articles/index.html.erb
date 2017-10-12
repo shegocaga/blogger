@@ -3,6 +3,10 @@
 
 <h1>All Articles</h1>
 
+<!-- Link to Tags Page -->
+<%= link_to "View Tags", tags_path %>
+
+<!-- List Links to Articles -->
 <ul id="articles">
   <% @articles.each do |article| %>
     <li>
@@ -11,4 +15,7 @@
   <% end %>
 </ul>
 
+<!-- Link to create a new article -->
 <%= link_to "Create a New Article", new_article_path, class: "new_article" %>
+
+For 3rd Reading + Math, what is the equivalent
